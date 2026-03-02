@@ -1,3 +1,5 @@
+## Rename the folder into bookmyhotel
+
 ## Environment Configuration
 
 Create a `.env` file inside the `bookmyhotel` folder.
