@@ -1,4 +1,4 @@
-## Rename the folder into bookmyhotel
+## Rename the folder to bookmyhotel
 
 ## Environment Configuration
 
