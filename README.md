@@ -14,7 +14,7 @@ A secure hotel booking system integrated with **PKCS#11 and SoftHSM** for OTP-ba
 
 ---
 
-## ⚙️ Quick Setup Overview
+## Quick Setup Overview
 
 1. Install required packages (SoftHSM, Apache, MySQL, PHP)
 2. Configure SoftHSM and create token
@@ -28,7 +28,7 @@ A secure hotel booking system integrated with **PKCS#11 and SoftHSM** for OTP-ba
 
 ## Full Installation Guide
 
-👉 For detailed step-by-step setup, refer to the guide below:
+For detailed step-by-step setup, refer to the guide below:
 
 [Installation Guide](./installation_guide.pdf)
 
@@ -49,13 +49,13 @@ http://localhost/bookmyhotel
 
 ---
 
-## 🔐 Security Note
+## Security Note
 
 This project uses **SoftHSM + PKCS#11** to securely generate and verify OTPs.
 Proper permissions and group access are required for correct execution.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Bharat Bitra**
