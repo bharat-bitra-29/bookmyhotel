@@ -1,46 +1,61 @@
-## Rename the folder to bookmyhotel
+# PKCS#11 Based OTP Authentication System
 
-## Environment Configuration
+A secure hotel booking system integrated with **PKCS#11 and SoftHSM** for OTP-based authentication.
 
-Create a `.env` file inside the `bookmyhotel` folder.
-
-### Step 1: Navigate to project folder
-
-```bash
-cd bookmyhotel
-nano .env
-```
-
-### Step 2: Paste This
-```
-BREVO_SMTP_KEY= paste the key located in installation_guide.pdf
-
-```
-
-### Step 3: SAVE FILE
-```
-ctrl + o ,enter
-ctrl + x
-```
-
-```markdown
-## Email Configuration
-
-This project uses **Brevo SMTP** for sending OTP emails.
-```
-
-
-# PKCS11 OTP Authentication System
-
-This project implements OTP authentication using PKCS#11 and SoftHSM.
-
-## Documentation
-
-📄 Installation Guide:  
-[View Installation Guide](installation_guide.pdf)
+---
 
 ## Features
-- PKCS#11 based OTP
-- SoftHSM token integration
-- MySQL database backend
-- PHP web interface
+
+* Secure OTP using PKCS#11
+* Key storage using SoftHSM
+* Hotel booking system
+* MySQL database integration
+* Apache + PHP backend
+
+---
+
+## ⚙️ Quick Setup Overview
+
+1. Install required packages (SoftHSM, Apache, MySQL, PHP)
+2. Configure SoftHSM and create token
+3. Clone the repository
+4. Setup `.env` file (SMTP key)
+5. Compile PKCS#11 programs
+6. Setup database
+7. Deploy to Apache
+
+---
+
+## Full Installation Guide
+
+👉 For detailed step-by-step setup, refer to the guide below:
+
+[Installation Guide](./installation_guide.pdf)
+
+---
+
+## Run the Project
+
+```bash
+sudo systemctl start apache2
+sudo systemctl start mysql
+```
+
+Open in browser:
+
+```
+http://localhost/bookmyhotel
+```
+
+---
+
+## 🔐 Security Note
+
+This project uses **SoftHSM + PKCS#11** to securely generate and verify OTPs.
+Proper permissions and group access are required for correct execution.
+
+---
+
+## 👨‍💻 Author
+
+**Bharat Bitra**
