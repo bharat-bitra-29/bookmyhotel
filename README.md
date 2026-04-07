@@ -55,7 +55,3 @@ This project uses **SoftHSM + PKCS#11** to securely generate and verify OTPs.
 Proper permissions and group access are required for correct execution.
 
 ---
-
-## Author
-
-**Bharat Bitra**
