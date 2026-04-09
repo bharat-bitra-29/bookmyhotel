@@ -35,14 +35,18 @@ int main(int argc, char *argv[]) {
     CK_BBOOL trueVal = CK_TRUE;
     CK_ULONG keyLen = 32; 
 
+    CK_BBOOL falseVal = CK_FALSE;
+
     CK_ATTRIBUTE template[] = {
         {CKA_CLASS, &keyClass, sizeof(keyClass)},
         {CKA_KEY_TYPE, &keyType, sizeof(keyType)},
-        {CKA_VALUE_LEN, &keyLen, sizeof(keyLen)},   //
+        {CKA_VALUE_LEN, &keyLen, sizeof(keyLen)},
         {CKA_LABEL, label, strlen(label)},
         {CKA_TOKEN, &trueVal, sizeof(trueVal)},
         {CKA_SIGN, &trueVal, sizeof(trueVal)},
-        {CKA_VERIFY, &trueVal, sizeof(trueVal)}
+        {CKA_VERIFY, &trueVal, sizeof(trueVal)},
+        {CKA_SENSITIVE, &trueVal, sizeof(trueVal)},     
+        {CKA_EXTRACTABLE, &falseVal, sizeof(falseVal)}   
     };
 
     CK_OBJECT_HANDLE key;
